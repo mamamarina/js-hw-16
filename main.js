@@ -15,7 +15,7 @@ firstName: 'Hanna',
 lastName: 'Black',
 age:35,
 fullName(){
-  return `${userObj.firstName}+''+ ${userObj.lastName}`;
+  return `${userObj.firstName} ${userObj.lastName}`;
   }
 };
 
@@ -50,7 +50,7 @@ console.log(userObj.fullName());
 
 /* eslint-disable capitalized-comments */
 function defUpperStr(value){
-  return (value||'default text'.toUpperCase());
+  return (value || 'default text').toUpperCase();
 }
 
 console.log(defUpperStr('My text')); // MY TEXT
@@ -111,7 +111,7 @@ function weekFn(n){
     case 5: dayname='Friday';break;
     case 6: dayname='Saturday';break;
     case 7: dayname='Sunday';break;
-    default: null;
+    default: dayname = null;
   }
 return dayname;
 }
@@ -120,6 +120,7 @@ console.log(weekFn(6));
 console.log(weekFn(2)); 
 console.log(weekFn(3)); 
 console.log(weekFn(1)); 
+console.log(weekFn(0)); 
 
 // console.log(weekFn(3)); // 'Среда'
 
