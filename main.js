@@ -102,18 +102,18 @@ function evenFn(n){
  * В реализации функции обязательно должны быть использованы операторы switch / case / default.
  */
 function weekFn(n){
-  let dayname='';
+  let dayName=' ';
   switch(n){
-    case 1: dayname='Monday';break;
-    case 2: dayname='Tuesday';break;
-    case 3: dayname='Wednesday';break;
-    case 4: dayname='Thursday';break;
-    case 5: dayname='Friday';break;
-    case 6: dayname='Saturday';break;
-    case 7: dayname='Sunday';break;
-    default: dayname = null;
+    case 1: dayName='Понедельник';break;
+    case 2: dayName='Вторник';break;
+    case 3: dayName='Среда';break;
+    case 4: dayName='Четверг';break;
+    case 5: dayName='Пятница';break;
+    case 6: dayName='Суббота';break;
+    case 7: dayName='Воскресенье';break;
+    default: dayName = null;
   }
-return dayname;
+return dayName;
 }
 console.log(weekFn(1)); 
 console.log(weekFn(6)); 
